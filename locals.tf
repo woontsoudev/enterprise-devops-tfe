@@ -8,8 +8,9 @@ locals {
   workspace = {
     "enterprise-devops-tfe" = {
       description = "Enterprise devops workspace"
-      execution_mode = "local"
+      execution_mode = "remote"
       project_id = module.project["enterprise-devops-project"].id
+      vcs_repo_identifier = "woontsoudev/enterprise-devops-tfe"
     }
   }
 }
