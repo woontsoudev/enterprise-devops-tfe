@@ -9,6 +9,6 @@ variable "github_app_installation_id" {
 }
 
 variable "github_organization_name" {
-  default = "woontsou"
+  default = "woontsoudev"
   type = string
 }

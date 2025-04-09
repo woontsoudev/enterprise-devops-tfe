@@ -10,14 +10,14 @@ locals {
       description = "Enterprise devops workspace"
       execution_mode = "remote"
       project_id = module.project["enterprise-devops-project"].id
-      vcs_repo_identifier = "woontsoudev/enterprise-devops-terraform-tfe"
+      vcs_repo_identifier = "${var.github_organization_name}/enterprise-devops-tfe"
     }
 
     "enterprise-devops-github" = {
       description = "Enterprise devops workspace for github"
       execution_mode = "local"
       project_id = module.project["enterprise-devops-project"].id
-      vcs_repo_identifier = "woontsoudev/enterprise-devops-terraform-github"
+      vcs_repo_identifier = "${var.github_organization_name}/enterprise-devops-terraform-github"
     }
   }
 }
