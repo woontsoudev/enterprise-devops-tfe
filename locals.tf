@@ -15,7 +15,7 @@ locals {
 
     "enterprise-devops-github" = {
       description = "Enterprise devops workspace for github"
-      execution_mode = "local"
+      execution_mode = "remote"
       project_id = module.project["enterprise-devops-project"].id
       vcs_repo_identifier = "${var.github_organization_name}/enterprise-devops-terraform-github"
     }
